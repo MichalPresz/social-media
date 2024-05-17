@@ -32,14 +32,12 @@ export default async function RootLayout({ children }) {
       <html lang="en">
         <body>
           <header>
-            <nav>
-              <SignedOut>
-                <SignInButton />
-              </SignedOut>
-              <SignedIn>
-                <UserButton />
-              </SignedIn>
-            </nav>
+          <SignedOut>
+              <SignInButton />
+            </SignedOut>
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
           </header>
           <main>
             <SignedOut>{children}</SignedOut>
